@@ -3,6 +3,31 @@
   margin: 0;
 }
 
+#header {
+  justify-content: space-around;
+}
+
+#header img {
+  padding-right: 80px;
+}
+
+#header nav {
+  display: inline-flex;
+  padding-right: 70px;
+  padding: auto;
+  justify-content: space-around;
+}
+
+#header nav li {
+  list-style: none;
+}
+
+#header nav li a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  padding: 20px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
