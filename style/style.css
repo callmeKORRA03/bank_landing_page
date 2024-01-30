@@ -1,10 +1,15 @@
+/* GENERAL STYLE */
 * {
   padding: 0;
   margin: 0;
 }
 
+/* HEADER SECTION */
 #header {
-  justify-content: space-around;
+  display: flex;
+  padding: 1rem;
+  letter-spacing: 0.5px;
+  justify-content: space-evenly;
 }
 
 #header img {
@@ -28,7 +33,216 @@
   padding: 20px;
 }
 
+#header #log {
+  padding-left: 10px;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    hsl(136, 65%, 51%) 0%,
+    hsl(136, 65%, 51%) 35%,
+    hsl(192, 70%, 51%) 100%
+  );
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%) !important;
+  font-size: 10px;
+}
+
+.log2 {
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    hsl(136, 65%, 51%) 0%,
+    hsl(136, 65%, 51%) 35%,
+    hsl(192, 70%, 51%) 100%
+  );
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%) !important;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 390px) {
+  #header nav {
+    display: none !important;
+  }
+  #header #log {
+    display: none !important;
+  }
+}
+
+/* BODY SECTION */
+#body {
+  padding: 1em;
+  display: flex;
+  scroll-behavior: smooth;
+  background: hsl(0, 0%, 100%);
+}
+
+#body .first {
+  justify-content: end;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+#body .first .head1 {
+  color: hsl(233, 26%, 24%);
+  letter-spacing: 1px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  padding-top: -10px;
+  font-size: 40px;
+}
+
+#body .first p {
+  color: hsl(233, 8%, 62%);
+  font-size: 18px;
+}
+
+#body .img-section {
+  background: url(/images/bg-intro-desktop.svg);
+  object-fit: cover;
+  height: 90vh;
+}
+
+/* End of Body Section*/
+
+/*Another  Section */
+#secondBody {
+  background: hsl(0, 0%, 98%);
+}
+
+#secondBody #main {
+  padding: 100px;
+}
+
+#secondBody #main .head2 {
+  padding-bottom: 70px;
+}
+
+#secondBody .head2 h2 {
+  color: hsl(233, 26%, 24%);
+}
+
+#secondBody .head2 p {
+  color: hsl(233, 8%, 62%);
+  font-size: 15px;
+}
+
+#secondBody .head3 {
+  display: flex;
+  /* padding: 100px; */
+}
+
+#secondBody .head3 div img {
+  height: 50px;
+  padding-bottom: 20px;
+}
+
+#secondBody .head3 div {
+  padding-right: 50px;
+}
+#secondBody .head3 div h3 {
+  color: hsl(233, 26%, 24%);
+  padding-bottom: 5px;
+}
+
+#secondBody .head3 div p {
+  /* padding: 5px; */
+  color: hsl(233, 8%, 62%);
+  font-size: 18px;
+}
+
+/* End of Another Section*/
+
+/* Articles*/
+#articles {
+  background: hsl(0, 0%, 100%);
+}
+
+#articles .main2 {
+  padding: 100px;
+}
+
+#articles .main2 h2 {
+  padding-bottom: 50px;
+}
+#articles .main2 .main3 {
+  display: flex;
+}
+
+#articles .main2 .main3 div {
+  border: 20px 20px 20px 20px red;
+  background: white;
+  padding-right: 50px;
+}
+
+#articles .main2 .main3 div img {
+  padding-bottom: 20px;
+  height: 145px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+#articles .main2 .main3 div h5 {
+  color: hsl(233, 8%, 62%);
+  font-size: 10px;
+  padding: 10px;
+}
+
+#articles .main2 .main3 div h3 {
+  color: hsl(233, 26%, 24%);
+  padding: 10px;
+}
+
+#articles .main2 .main3 div p {
+  padding: 10px;
+  color: hsl(233, 8%, 62%);
+  font-size: 15px;
+}
+/*FOOTER */
+footer {
+  background: hsl(220, 16%, 96%);
+}
+footer .contents {
+  padding: 50px;
+  justify-content: space-between;
+  display: flex;
+}
+
+footer .contents div {
+  padding-right: 100px;
+}
+
+footer .contents div ul li {
+  color: black;
+  padding: 5px;
+  list-style-type: none;
+}
+
+footer .contents div #log {
+  padding-left: 10px;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    hsl(136, 65%, 51%) 0%,
+    hsl(136, 65%, 51%) 35%,
+    hsl(192, 70%, 51%) 100%
+  );
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%) !important;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+footer .contents div p {
+  padding-top: 30px;
+  color: hsl(233, 8%, 62%);
+}
+
+footer .contents a {
+  padding-bottom: 20px;
+}
 .attribution {
+  background: hsl(220, 16%, 96%);
   font-size: 11px;
   text-align: center;
 }
